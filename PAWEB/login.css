@@ -1,0 +1,93 @@
+:root {
+    --bg: rgb(245, 245, 245);
+    --main: rgb(184, 203, 255);
+    --blue: rgb(57, 182, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Releway', sans-serif;
+}
+
+body{
+    background-image: url('./img/bg-smd.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input {
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid grey;
+    margin: 10px 0;
+    font-size: 20px;
+    width: 100%;
+}
+
+#login{
+    border: 1px solid var(--blue);
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--blue);
+}
+
+#registrasi{
+    border: 1px solid var(--blue);
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--blue);
+    display: none;
+    float: right;
+}
+
+.input-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    height: 50vh;
+    position: relative;
+    margin-top: 25vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg);
+}
+
+.input-wrap > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrap >input {
+    width: 100%;
+}
+
+.input-wrap > button {
+    background-color: var(--blue);
+    color: white;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.submit-button{
+    background-color: var(--blue);
+    color: white;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    #login{
+        width: 100vw;
+    }
+    #registrasi{
+        width: 100vw;
+    }
+}
